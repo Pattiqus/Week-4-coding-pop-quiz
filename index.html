@@ -9,10 +9,15 @@
 </head>
 <body>
     <header>
-        <h2>Coding Pop Quiz - Do you have what it takes?</h2>
+        
         <nav>
-            <span><a href="highScores">High Scores</a></span>
-            <span>Timer:</span id = "#timer"> 
+            <div>
+                <h2>Coding Pop Quiz - Do you have what it takes?</h2>
+            </div>
+                <span class = "scoreArt"><a href="#highScores">High Scores</a></span>
+            <div class ="timerArt">
+                <p><span value="0" max="100" id = "#timer"></span>Seconds remain</p> 
+            </div>
         </nav>
     </header>
 
@@ -25,47 +30,47 @@
 
     <div id="question1">
         <h3>Arrays in JavaScript can be used to store _____'</h3>
-        <ol>
-            <li>Numbers & strings</li>
-            <li>Other arrays</li>
-            <li>Booleans</li>
-            <li>All of the above</li>
+        <ol id="buttons">
+            <li><a href="#question2">Numbers & strings</a></li>
+            <li><a href="#question2">Other arrays</a></li>
+            <li><a href="#question2">Booleans</a></li>
+            <li><a href="#question2">All of the above</a></li>
         </ol>
     </div>
     <div id="question2">
         <h3>Commonly used data types DO NOT include:</h3>
         <ol>
-            <li>Strings</li>
-            <li>Booleans</li>
-            <li>Alerts</li>
-            <li>Numbers</li>
+            <li><a href="#question3">Strings</a></li>
+            <li><a href="#question3">Booleans</a></li>
+            <li><a href="#question3">Alerts</a></li>
+            <li><a href="#question3">Numbers</a></li>
         </ol>
     </div>
     <div id="question3">
         <h3>The condition in an if / else statement is enclosed within _____.</h3>
         <ol>
-            <li>Quotes</li>
-            <li>Curly brackets</li>
-            <li>Parentheses</li>
-            <li>Square brackets</li>
+            <li><a href="#question4">Quotes</a></li>
+            <li><a href="#question4">Curly brackets</a></li>
+            <li><a href="#question4">Parentheses</a></li>
+            <li><a href="#question4">Square brackets</a></li>
         </ol>
     </div>
     <div id="question4">
         <h3>String vales must be enclosed within _____ when being assigned to variables</h3>
         <ol>
-            <li>Commas</li>
-            <li>Curly brackets</li>
-            <li>Quotes</li>
-            <li>parentheses</li>
+            <li><a href="#question5">Commas</a></li>
+            <li><a href="#question5">Curly brackets</a></li>
+            <li><a href="#question5">Quotes</a></li>
+            <li><a href="#question5">parentheses</a></li>
         </ol>
     </div>
     <div id="question5">
         <h3>A very useful tool used during development and debugging for printing content to the debugger is:</h3>
         <ol>
-            <li>Javascript</li>
-            <li>Terminal /bash</li>
-            <li>For loops</li>
-            <li>Console.log</li>
+            <li><a href="#quizEnd">Javascript</a></li>
+            <li><a href="#quizEnd">Terminal /bash</a></li>
+            <li><a href="#quizEnd">For loops</a></li>
+            <li><a href="#quizEnd">Console.log</a></li>
         </ol>
     </div>
     <div id="quizEnd">
@@ -73,7 +78,7 @@
         <span>Score:</span>
             <div>
                 <form>
-                    <label for="nameInput">Please enter your name</label>
+                    <label for="nameInput">Please enter your name:</label>
                     <input type="text" id="userName" name="userName" placeholder="Bilbo Baggins" />
                 </form>
 

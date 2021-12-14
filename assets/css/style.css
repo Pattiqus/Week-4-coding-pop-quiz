@@ -1,4 +1,38 @@
-header nav h2 {
+* {
+    text-align: center;
+}
+
+ol {
+    display: inline-block;
+    text-align: left !important;
+    margin: 0 auto;
+}
+
+header h2 {
     text-align: center;
     text-shadow: 3px;
+}
+
+nav {
+    width: 100%;
+    background-color: darkmagenta;
+    overflow: auto;
+}
+
+
+.scoreArt {
+    float: left;
+    padding: 12px;
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+    
+}
+
+.timerArt {
+    float: right;
+    padding: 12px;
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
 }
