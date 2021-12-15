@@ -1,109 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="assets/css/style.css"/>
-</head>
-<body>
-    <header>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="assets/css/style2.css"/>
+        <title>Coding Quiz</title>
+    </head>
+    <body>
+
+        <!-- # Section: Timer -->
+        <div class="timer">
+            Time:<span id="time">0</span>
+        </div>
+        <!-- # /Section: Timer -->
+
+        <!-- # Main: Content for Pop-Quiz -->
+        <div class="main">
+            <div id="main-screen" class="mainStyle">
+                <h1>Coding Quiz Challenge</h1>
+                <p>Try to answer the following quesionts in the allocated time.</p>
+                <button id="startButton">Start Quiz</button>
+            </div>
+
+            <div id="questionsWrapper" class="hide">
+                <h2 id="questionsTitle"></h2>
+                <div id="choices"></div>
+            </div>
+
+            
+            <!-- # Final Page: Content for reaching end of quiz -->
+            <div id="quizEnd" class="hide">
+                <h2>End of Quiz!</h2>
+                <span>Score: <span id="finalScore"></span></span>
+                    <div>
+                        <form>
+                            <label for="nameInput">Please enter your name:</label>
+                            <input type="text" id="userName" name="userName" placeholder="Bilbo Baggins" min="2" max="65" />
+                        </form>
         
-        <nav>
-            <div>
-                <h2>Coding Pop Quiz - Do you have what it takes?</h2>
+                    </div>
+                <button id="submitBtn" class="submit-btn-art">Submit</button>
             </div>
-                <span class = "scoreArt"><a href="#highScores">High Scores</a></span>
-            <div class ="timerArt">
-                <p><span value="0" max="100" id = "#timer"></span>Seconds remain</p> 
+            <!-- # /Final Page: Content for reaching end of quiz -->
+
+            <div id="scoreboardWrapper" class="hide">
+                <h2 id="scoreboardTitle">Highscores</h2>
+                <div id="scores"></div>
+                <div id="scoreboardActions">
+                    <button id="starQuizAgain">Back</button>
+                    <button id="clearScoreboard">Clear Scoreboard</button>
+                </div>
             </div>
-        </nav>
-    </header>
 
-    <div id="quizStart">
-        <h1>Code Quiz!</h1>
-            <p>Press start to begin!</p>
-            <button id="start-btn" class="start-btn-art">Start</button>
+        </div>
+        <!-- # /Main: Content for Pop-Quiz -->
 
-    </div>
 
-    <div id="question1">
-        <h3>Arrays in JavaScript can be used to store _____'</h3>
-        <ol id="buttons">
-            <li><a href="#question2">Numbers & strings</a></li>
-            <li><a href="#question2">Other arrays</a></li>
-            <li><a href="#question2">Booleans</a></li>
-            <li><a href="#question2">All of the above</a></li>
-        </ol>
-    </div>
-    <div id="question2">
-        <h3>Commonly used data types DO NOT include:</h3>
-        <ol>
-            <li><a href="#question3">Strings</a></li>
-            <li><a href="#question3">Booleans</a></li>
-            <li><a href="#question3">Alerts</a></li>
-            <li><a href="#question3">Numbers</a></li>
-        </ol>
-    </div>
-    <div id="question3">
-        <h3>The condition in an if / else statement is enclosed within _____.</h3>
-        <ol>
-            <li><a href="#question4">Quotes</a></li>
-            <li><a href="#question4">Curly brackets</a></li>
-            <li><a href="#question4">Parentheses</a></li>
-            <li><a href="#question4">Square brackets</a></li>
-        </ol>
-    </div>
-    <div id="question4">
-        <h3>String vales must be enclosed within _____ when being assigned to variables</h3>
-        <ol>
-            <li><a href="#question5">Commas</a></li>
-            <li><a href="#question5">Curly brackets</a></li>
-            <li><a href="#question5">Quotes</a></li>
-            <li><a href="#question5">parentheses</a></li>
-        </ol>
-    </div>
-    <div id="question5">
-        <h3>A very useful tool used during development and debugging for printing content to the debugger is:</h3>
-        <ol>
-            <li><a href="#quizEnd">Javascript</a></li>
-            <li><a href="#quizEnd">Terminal /bash</a></li>
-            <li><a href="#quizEnd">For loops</a></li>
-            <li><a href="#quizEnd">Console.log</a></li>
-        </ol>
-    </div>
-    <div id="quizEnd">
-        <h2>End of Quiz!</h2>
-        <span>Score:</span>
-            <div>
-                <form>
-                    <label for="nameInput">Please enter your name:</label>
-                    <input type="text" id="userName" name="userName" placeholder="Bilbo Baggins" />
-                </form>
 
-            </div>
-        <button id="submit-btn" class="submit-btn-art">Submit</button>
-    </div>
-    <div id="highScores">
-        <h2>High Scores</h2>
-        <ol>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-        </ol>
-    </div>
-
-    <footer>
-
-    </footer>
-    
-</body>
+        <!-- # Scripts: Custom Javascript Assets -->
+        <script src="./assets/javascript/questions.js"></script>
+        <script src="./assets/javascript/script.js"></script>
+        <!-- # /Scripts -->
+        
+    </body>
 </html>
