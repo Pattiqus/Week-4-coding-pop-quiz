@@ -434,12 +434,14 @@ var viewHighScores = function() {
 
     var viewHighScores = document.getElementById('scoreboardWrapper');
     var hideMain = document.getElementById('main-screen');
+    var hideEnd = document.getElementById('quizEnd')
 
     viewHighScores.classList.remove("hide");
     questionsWrapper.classList.add("hide");
     hideMain.classList.add('hide');
+    hideEnd.classList.add('hide');
 
-
+    clearInterval( timerA );
 }
 
 var viewHighScoresBtn = document.getElementById('highScores');
