@@ -220,7 +220,7 @@ var verifyAnswers = function( clickEvent ) {
 
     // # Decrement: Timer Value
     if( answerIsCorrect == false ) {
-        time = time - 10;
+        time = time - 20;
         clockClick( false );
     }
 

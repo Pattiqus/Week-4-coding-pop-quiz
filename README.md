@@ -3,7 +3,9 @@
 <body>
 This repository contains the source code for a coding pop quiz which is dynamically enabled with Javascript.
 
-The player begins by clicking the start button, the timer in the top left corner begins to cound down and 
+The player begins by clicking the start button, the timer in the top right corner begins to cound down and and the  player is presented with a series of questions. A correct answer leads to the next questions, an incorrect answer leads to the next question but also subtracts 20 seconds from the timer.
+
+Once all questions are answered, the final time on the timer is the players score. They are then able to put their name into a form and the score will be posted to a scoreboard.
 <br/>
 <br/>
 
@@ -17,11 +19,11 @@ The player begins by clicking the start button, the timer in the top left corner
 <br/>
 <h2>URL:</h2>
 
-https://pattiqus.github.io/Week3-Password-Generator-/
+https://pattiqus.github.io/Week-4-coding-pop-quiz/
 
 <h2>Screenshot:</h2>
 
-![Week2-Portfolio-Screenshot](/assets/images/week3-screenshot.JPG)
+![Week4-CodingQuiz-Screenshot](/assets/images/Week-4-Screenshot.JPG)
 
 </br>
 
