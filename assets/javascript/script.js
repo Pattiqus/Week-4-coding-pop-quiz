@@ -431,10 +431,16 @@ startQuizAgainBtn.addEventListener('click', startQuizAgain);
 //  */
 
 var viewHighScores = function() {
-    mainScreen.classList.add("hide");
-    scoreboardWrapper.classList.remove("hide");
+
+    var viewHighScores = document.getElementById('scoreboardWrapper');
+    var hideMain = document.getElementById('main-screen');
+
+    viewHighScores.classList.remove("hide");
+    questionsWrapper.classList.add("hide");
+    hideMain.classList.add('hide');
+
 
 }
 
-var viewHighScores =document.getElementsByTagName('highScores');
-viewHighScores.addEventListener('click', )
+var viewHighScoresBtn = document.getElementById('highScores');
+viewHighScoresBtn.addEventListener('click', viewHighScores);
