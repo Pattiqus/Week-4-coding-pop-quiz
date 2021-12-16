@@ -67,18 +67,6 @@ var showFinishScreen = function() {
 
 };
 
-// function showQuestions() {
-//     // getting question from question array
-//     var currentQuestion = questions[currentQuestioni];
-//     titleQ.textContent = currentQuestion.title;
-//     // clear all choices
-//     choicesQ.textContent = "";
-//     // get choices
-//     currentQuestion.choices.forEach( function(choice,i) {
-//         var h2El = document.createElement("h2");
-//         h2El.setAttribute("value",choices);
-//     });
-// }
 
 startButton.onclick = startQuiz;
 
@@ -436,3 +424,17 @@ var startQuizAgain = function() {
 
 var startQuizAgainBtn = document.getElementById('starQuizAgain');
 startQuizAgainBtn.addEventListener('click', startQuizAgain);
+
+// **
+//  *  Function: viewHighScores
+//  *  Description: used to view high scores from the start screen
+//  */
+
+var viewHighScores = function() {
+    mainScreen.classList.add("hide");
+    scoreboardWrapper.classList.remove("hide");
+
+}
+
+var viewHighScores =document.getElementsByTagName('highScores');
+viewHighScores.addEventListener('click', )
