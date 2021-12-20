@@ -12,7 +12,7 @@
         <nav>
             <!-- Section: High Scores Button -->
             <div class="highScores">
-                <button id="highScores">High Scores</button>
+                <button id="highScores" class="highScoreButtonArt">High Scores</button>
             </div>
 
             <!-- # Section: Timer -->
@@ -26,7 +26,7 @@
             <div id="main-screen" class="mainStyle">
                 <h1>Coding Quiz Challenge</h1>
                 <p>Try to answer the following questions in the allocated time.</p>
-                <button id="startButton">Start Quiz</button>
+                <button id="startButton" class="startButtonArt">Start Quiz</button>
             </div>
 
             <div id="questionsWrapper" class="hide">
@@ -38,10 +38,10 @@
             <!-- # Final Page: Content for reaching end of quiz -->
             <div id="quizEnd" class="hide">
                 <h2>End of Quiz!</h2>
-                <span>Score: <span id="finalScore"></span></span>
+                <span class = scoreInputArt>Score: <br> <span id="finalScore" class ="scoreArt"></span></span>
                     <div>
                         <form>
-                            <label for="nameInput">Please enter your name:</label>
+                            <label for="nameInput" class="nameInputArt">Please enter your name:</label>
                             <input type="text" id="userName" name="userName" placeholder="Bilbo Baggins" min="2" max="65" />
                         </form>
         
@@ -52,10 +52,10 @@
 
             <div id="scoreboardWrapper" class="hide">
                 <h2 id="scoreboardTitle">Highscores</h2>
-                <div id="scores"></div>
+                <div id="scores" class="scoreBoardArt"></div>
                 <div id="scoreboardActions">
-                    <button id="starQuizAgain">Back</button>
-                    <button id="clearScoreboard">Clear Scoreboard</button>
+                    <button id="starQuizAgain" class="backButtonArt">Back</button>
+                    <button id="clearScoreboard" class="clearScoreButton">Clear Scoreboard</button>
                 </div>
             </div>
 

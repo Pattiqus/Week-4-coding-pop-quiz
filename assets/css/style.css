@@ -1,17 +1,60 @@
+* {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
 .hide {
     display: none;
 }
 
-.main {
-    text-align: center;
-}
-
 nav {
     width: 100%;
-    background-color: rgb(7, 241, 230);
+    background-color: rgb(7, 85, 255);
     overflow: auto;
+    margin: 0px;
 }
 
+/* container styling */
+.main {
+    text-align: center;
+    border-color: blue;
+    border-width: 5px;
+    border-style: solid;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin-top: 200px;
+    margin-bottom: 200px;
+    margin-left: 600px;
+    margin-right: 600px;
+    border-radius: 50px;
+    background-color: lightblue;
+}
+
+.startButtonArt {
+    padding: 12px;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 40px;
+    border: solid;
+    border-radius: 20px;
+    border-color: blueviolet;
+    margin: 10px;
+    background-color: blue
+}
+
+.choice-button {
+    padding: 12px;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 20px;
+    border: solid;
+    border-radius: 20px;
+    border-color: blueviolet;
+    margin: 10px;
+    background-color: blue
+
+}
+
+/* div around top left highscore button */
 .highScores {
     float: left;
     padding: 12px;
@@ -21,14 +64,141 @@ nav {
     
 }
 
+/* CSS for leader board */
+.scoreBoardArt {
+    border: solid;
+    font-size: larger;
+    font-weight: bolder;
+    margin-left: 200px;
+    margin-right: 200px;
+    border-radius: 25px;
+    color: rgb(212, 248, 9);
+    background-color: blue;
+}
+
+/* Button art */
+
+.highScoreButtonArt {
+    float: left;
+    padding: 12px;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 40px;
+    border: solid;
+    border-radius: 20px;
+    border-color: blueviolet;
+    margin: 10px;
+    background-color: blueviolet;
+}
+
+.submit-btn-art {
+    padding: 12px;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 20px;
+    border: solid;
+    border-radius: 20px;
+    border-color: blueviolet;
+    margin: 10px;
+    background-color: blue
+}
+
+.backButtonArt {
+    padding: 12px;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 20px;
+    border: solid;
+    border-radius: 20px;
+    border-color: blueviolet;
+    margin: 10px;
+    background-color: blue
+}
+
+.clearScoreButton {
+    padding: 12px;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 20px;
+    border: solid;
+    border-radius: 20px;
+    border-color: blueviolet;
+    margin: 10px;
+    background-color: red;
+}
+
+.scoreInputArt {
+    font-size: larger;
+    font-weight: bolder;
+}
+
+.nameInputArt {
+    font-weight: bolder;
+
+}
+
+.scoreArt {
+    font-size: 100px;
+    color: purple;
+
+}
+
+
+/* hover CSS */
+.highScoreButtonArt:hover {
+    color: red;
+    cursor: pointer;
+}
+
+.startButtonArt:hover {
+    color: red;
+    cursor: pointer;
+}
+
+.choice-button:hover {
+    color: red;
+    cursor: pointer;
+}
+
+.backButtonArt {
+    color: red;
+    cursor: pointer;
+}
+
+.clearScoreButton:hover {
+    color: rgb(88, 6, 6);
+    cursor: pointer;
+}
+
+.submit-btn-art {
+    color: red;
+    cursor: pointer;
+}
+
+/* Timer styling */
 .timer {
     float: right;
     padding: 12px;
-    color: rgb(2, 0, 0);
+    color: rgb(255, 255, 255);
     text-decoration: none;
     font-size: 40px;
+    border: solid;
+    border-radius: 20px;
+    margin: 22px;
+    border-color: blueviolet;
+    background-color: blueviolet;
 }
 
 h1 {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 50px;
+}
+
+h2 {
+    font-size: 40px;
+}
+
+p {
+    font-size: larger;
+    font-weight: bolder;
 }
